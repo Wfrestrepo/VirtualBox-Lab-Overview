@@ -29,7 +29,9 @@ We will configure basic rules and understand ACLs, using an Implicit Deny rule t
 
 -Windows Server 2019: 
 
-We will download the ISO file, in that way, we can install and configure the server from the start. All the OS and services above will be attached to this web server 2019. We will connect the machines to the same Switch, create a DNS server and configure the Active Directory to create users and groups, giving and removing access. 
+We will download the ISO file, in that way, we can install and configure the server from the start. All the OS and services above will be attached to this web server 2019. We will connect the machines to the same Switch, create a DNS server and configure the Active Directory to create users and groups, giving and removing access.
+
+https://github.com/Wfrestrepo/Active-Directory
 
 ## Connecting all the machines: 
 
