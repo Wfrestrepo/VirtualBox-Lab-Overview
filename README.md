@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, we want to install VirtualBox and configure different OS,  create an Active Directory and DNS server, and configure rules on Pfsense.
+In this lab, we will install VirtualBox and configure different OS. Create an Active Directory, and DNS server, and configure rules on Pfsense.
 
 ![VirtualBox](https://github.com/Wfrestrepo/VirtualBox-Lab-Overview/assets/108705302/97a25f6d-ad0a-482f-8eeb-fde84d6404a0)
 
@@ -13,11 +13,11 @@ First, we need to install a Hypervisor for our lab, in this case, we’ll use Vi
 
 -Kali Linux: 
 
-We will use Kali to explore some vulnerabilities on the Metasplotaible 2 machine. 
+Use Kali to explore some vulnerabilities on the Metasplotaible 2 machine. 
 
 -Metaspliotable 2: 
 
-Metasplotaible is a vulnerable machine that we use for penetration testing and learning about how threat actors approach their actions. 
+Metasplotaible is a vulnerable machine that is used for penetration testing and learning about how actors approach their actions. 
 
 -Windows 10: 
 
@@ -25,13 +25,13 @@ Even if our Host system is Windows, VirtualBox needs to download an image of an 
 
 -Pfsense Firewall: 
 
-We will configure basic rules and understand ACLs, using an Implicit Deny rule to implement security. 
+Configure basic rules and understand ACLs, using an Implicit Deny rule to implement security. 
 
 https://github.com/Wfrestrepo/PFsense
 
 -Windows Server 2019: 
 
-We will download the ISO file, in that way, we can install and configure the server from the start. All the OS and services above will be attached to this web server 2019. We will connect the machines to the same Switch, create a DNS server and configure the Active Directory to create users and groups, giving and removing access.
+Download the ISO file, in that way, we can install and configure the server from the start. All the OS and services above will be attached to this web server 2019. We will connect the machines to the same Switch, create a DNS server and configure the Active Directory to create users and groups, giving and removing access.
 
 https://github.com/Wfrestrepo/Active-Directory
 
@@ -54,8 +54,9 @@ Here we can see that all the machines can PING our Windows server IP of 198.168.
 
 Installing different roles: 
 
-After adding Active Directory and DNS on our Server 2019, we are going to click to promote this server to a domain controller and give it the name “cyberlab.com” The computer will ask you to reset to apply the changes. Right after you will find a new profile to access, this becomes your new domain controller. Another important point is that these VMs are bridged to our physical network, and if you want to run these machines on a sandbox environment, you will need to press Ctrl > H a new menu will ask you to create the environment. Once is created, you will change the network settings of the machines you want to connect to the sandbox, from Bridge to the Host-only Adapter. 
+After adding Active Directory and DNS on our Server 2019, we are going to click to promote this server to a domain controller and give it the name “cyberlab.com” The computer will ask you to reset to apply the changes. Right after you will find a new profile to access, this becomes your new domain controller. 
+Another important point is that these VMs are bridged to our physical network, and if you want to run these machines on a sandbox environment, you will need to press Ctrl > H a new menu will ask you to create the environment. Once is created, you will change the network settings of the machines you want to connect to the sandbox, from Bridge to the Host-only Adapter. 
 
 ## Conclusion
 
-Using virtual machines (VMs) is an easy and safe approach to creating, testing, and managing various operating systems simultaneously. At our organization, our top priority is security, and deploying updates in these environments is an essential component of our policies and patch management strategies, without disrupting normal operations and preserving business continuity.
+Using virtual machines (VMs) is an easy and safe approach to create, test, and manage various operating systems simultaneously. Deploying updates in these environments is an essential component of our policies and patch management strategies, without disrupting normal operations and preserving business continuity.
